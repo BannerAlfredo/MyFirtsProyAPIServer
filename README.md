@@ -16,3 +16,8 @@ Este proyecto sirve como ejemplo para quienes desean aprender a construir APIs e
 | **SQL Server**            | Motor de base de datos                  |
 | **Swagger (Swashbuckle)** | Documentación automática                |
 | **AutoMapper**            | Mapeo de entidades y DTOs               |
+
+
+"ConnectionStrings": {
+  "DefaultConnection": "Server=localhost;Database=EmployeeDB;Trusted_Connection=True;TrustServerCertificate=True;"
+}
