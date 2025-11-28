@@ -45,8 +45,7 @@ MyFirtsProyAPIServer/
 ## ⚙️ Tecnologías Utilizadas
 
 - ASP.NET Core API
-- SQL Server (o SQLite)
-- .NET 7.0 / .NET 8.0
+- SQL Server
 - Microsoft.AspNetCore.OpenApi (9.0.0)
 - Microsoft.EntityFrameworkCore (9.0.0)
 -	Microsoft.EntityFrameworkCore.SqlServer (9.0.0)
@@ -88,6 +87,17 @@ dotnet ef database update
 dotnet run HTPP --MyFirtsProyAPIServer
 ```
 
+### 4. Crear  Actualizar la base de datos
+SQL: Creamos la base de datos
+```bash
+create database My_Firts_Api
+```
+
+VISUAL STUDIO 2022: Ingresamos a Herramientas, administrador de paquetes NuGut, Consola de Administrador de paquetes luego ingresamos
+```bash
+Update-Database
+```
+
 ---
 
 ## 📚 Principios Aplicados
@@ -97,6 +107,11 @@ dotnet run HTPP --MyFirtsProyAPIServer
 - public IActionResult GetAllEmpleados: `[HttpGet]`, Leer Empleados.
 - public IActionResult AddEmployee: `[HttpPost]`, Agregar Empleados.
 - public IActionResult DeleteEmployee:  `[HttpDelete]`, Eliminar Empleados.
+
+---
+
+### INFORMACION ADICINAL
+Migración:  `Add-Migration "Creation Model Employee" `
 
 ---
 
